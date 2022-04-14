@@ -8,7 +8,6 @@
 
 /* цвет ссылок активных #2196F3 */
 
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -16,8 +15,16 @@
     --light-text-color: #FFFFFF;
     --primary-bg-color: #FFFFFF;
     --dark-bg-color: #2F303A;
-    --buttom-bg-color: #F5F4FA;
-    
+    --buttom-bg-color: #F5F4FA;  
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -26,7 +33,30 @@ body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+img {
+    display: block;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
 .list {
     list-style: none;
 }
@@ -52,15 +82,27 @@ body {
     font-size: 26px;
     line-height: 1.2;
 }
-.header-logo {
-    color: #000000;
-}
-.footer-logo {
-    color: #FFFFFF;
-}
 
 /* Header */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    color: #000000;
+} 
+.header-nav {
+    display: flex;
+}
+.header-cont {
+    display: flex;
+}
 .header-link {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -104,11 +146,13 @@ body {
 }
 
 .button {
+    display: flex;
+    border-radius: 4px;
+    padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -172,6 +216,11 @@ body {
     line-height: 1.88;
 }
 /* Footer */
+
+.footer-logo {
+    color: #FFFFFF;
+}
+
 address {
     font-style: normal;
 }
