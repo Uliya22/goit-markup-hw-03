@@ -88,18 +88,26 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid #cecece; 
 }
 .header-logo {
+    margin-right: 93px;
     color: #000000;
 } 
 .header-nav {
     display: flex;
 }
+.header-nav .nav-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-cont {
     display: flex;
+    margin-left: auto;
 }
+
 .header-link {
-    display: flex;
+    display: block;
     margin-top: 32px;
     margin-bottom: 32px;
     height: 16px;
@@ -117,7 +125,9 @@ img {
 .current {
     color: var(--accent-color);
 }
-
+.header-cont .cont-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-contact {
     font-weight: 500;
     font-size: 14px;
@@ -133,34 +143,39 @@ img {
 
 /* Hero */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: var(--dark-bg-color);
 }
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-text-color);
 }
 
 .button {
-    display: flex;
     border-radius: 4px;
     padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--light-text-color);
     background-color: var(--accent-color);
     cursor: pointer;
 }
 .button-secondary {
+    height: 38px;
+    padding: 0px 22px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    border: transparent;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -175,9 +190,22 @@ img {
     color: var(--light-text-color);
     background-color: var(--accent-color);
 }
-
-/* Section */
+.porfolio-button {
+    display: flex;
+    justify-content: center;
+}
+.porfolio-button .portfolio-item-btn:not(:last-child) {
+    margin-right: 8px;
+}
+/* Section Особенности*/
+.spesifics {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: -30px;
+}
 .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
@@ -185,44 +213,105 @@ img {
 }
 /* Webstudio */
 .specifics-title {
+    margin-left: 30px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
+.specifics-text {
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.work {
+    padding-bottom: 94px;
+}
+.photo-work {
+    display: flex;
+    margin-left: -30px;
+}
+.photo-work-item {
+    margin-left: 30px;
+}
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-list {
+    display: flex;
+    margin-top: 50px;
+}
+.team-list .team-item:not(:last-child) {
+    margin-right: 30px;
+}
 .photo-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--title-text-color);
 }
-.specifics-text {
-    font-size: 14px;
-    line-height: 1.71;
-}
+
 .photo-text {
+    margin-bottom: 30px;
+    text-align: center;
     font-size: 16px;
     line-height: 1.2;
 }
 /* Portfolio */
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.portfolio-item {
+    margin-left: 30px;
+    border-bottom: 1px solid #eeeeee;
+}
 .portfolio-title {
+    margin: 20px 24px 4px;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
 .portfolio-text {
+    margin: 0px 24px 20px;
     font-size: 16px;
     line-height: 1.88;
 }
 /* Footer */
-
+.footer {
+    padding: 60px 0px; 
+    background-color: var(--dark-bg-color);
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+.footer-list {
+margin-top: 20px;
+}
 .footer-logo {
     color: #FFFFFF;
 }
 
 address {
     font-style: normal;
+}
+.footer-list .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-item {
+    height: 21px;
 }
 .footer-link {
     font-size: 14px;
@@ -242,7 +331,5 @@ address {
 .footer-contact:focus {
     color: var(--accent-color)
 }
-.footer {
-    background-color: var(--dark-bg-color);
-}
+
 
