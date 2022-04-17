@@ -21,6 +21,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -33,6 +34,7 @@ body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
+
 h1,
 h2,
 h3,
@@ -42,6 +44,7 @@ h6,
 p {
     margin: 0;
 }
+
 ul,
 ol {
     padding-left: 0;
@@ -50,12 +53,13 @@ ol {
 img {
     display: block;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 .list {
     list-style: none;
@@ -74,6 +78,10 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .logo {
     color: var(--accent-color);
@@ -105,7 +113,6 @@ img {
     display: flex;
     margin-left: auto;
 }
-
 .header-link {
     display: block;
     margin-top: 32px;
@@ -121,7 +128,6 @@ img {
 .header-link:focus {
     color: var(--accent-color);
 }
-
 .current {
     color: var(--accent-color);
 }
@@ -133,8 +139,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    
+    color: var(--primary-text-color); 
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -157,15 +162,14 @@ img {
     text-transform: uppercase;
     color: var(--light-text-color);
 }
-
 .button {
-    border-radius: 4px;
-    padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
     color: var(--light-text-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -200,8 +204,6 @@ img {
 /* Section Особенности*/
 .spesifics {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: -30px;
 }
 .section-title {
@@ -211,7 +213,7 @@ img {
     text-align: center;
     color: var(--title-text-color);
 }
-/* Webstudio */
+/* Webstudio gallery*/
 .specifics-title {
     margin-left: 30px;
     margin-bottom: 10px;
@@ -235,19 +237,20 @@ img {
 .photo-work-item {
     margin-left: 30px;
 }
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .team-list {
     display: flex;
     margin-top: 50px;
 }
+.team-item {
+    width: 270px;
+}
 .team-list .team-item:not(:last-child) {
     margin-right: 30px;
 }
+.team-cards {
+    padding: 30px 0px;
+}
 .photo-title {
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: 500;
@@ -255,39 +258,45 @@ img {
     line-height: 1.2;
     color: var(--title-text-color);
 }
-
 .photo-text {
-    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
 }
+
 /* Portfolio */
-.portfolio-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
 }
 .portfolio-item {
+    width: 370px;
+    width: calc(100% / 3 - 30px);
     margin-left: 30px;
-    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+}
+.portfolio-cards {
+    margin: 20px 24px 20px;
 }
 .portfolio-title {
-    margin: 20px 24px 4px;
+    height: 36px;
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
 .portfolio-text {
-    margin: 0px 24px 20px;
+    height: 30px;
+
     font-size: 16px;
     line-height: 1.88;
 }
+
 /* Footer */
 .footer {
     padding: 60px 0px; 
