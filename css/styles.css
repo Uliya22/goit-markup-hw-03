@@ -204,7 +204,12 @@ img {
 /* Section Особенности*/
 .spesifics {
     display: flex;
-    margin-left: -30px;
+}
+.spesifics .item-spesifics:not(:last-child) {
+    margin-right: 30px;
+}
+.item-spesifics {
+    width: 270px;
 }
 .section-title {
     margin-bottom: 50px;
@@ -214,8 +219,8 @@ img {
     color: var(--title-text-color);
 }
 /* Webstudio gallery*/
+
 .specifics-title {
-    margin-left: 30px;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -223,7 +228,6 @@ img {
     color: var(--title-text-color);
 }
 .specifics-text {
-    margin-left: 30px;
     font-size: 14px;
     line-height: 1.71;
 }
