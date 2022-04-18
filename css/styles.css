@@ -84,6 +84,7 @@ img {
     padding-bottom: 94px;
 }
 .logo {
+    margin-right: 93px;
     color: var(--accent-color);
     font-family: 'Raleway';
     font-weight: 700;
@@ -93,14 +94,16 @@ img {
 
 /* Header */
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+.header-section {
     border-bottom: 1px solid #cecece; 
 }
+.header-container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+}
 .header-logo {
-    margin-right: 93px;
     color: #000000;
 } 
 .header-nav {
@@ -115,8 +118,6 @@ img {
 }
 .header-link {
     display: block;
-    margin-top: 32px;
-    margin-bottom: 32px;
     height: 16px;
     font-weight: 500;
     font-size: 14px;
@@ -175,10 +176,8 @@ img {
     cursor: pointer;
 }
 .button-secondary {
-    height: 38px;
-    padding: 0px 22px;
+    padding: 6px 22px;
     border-radius: 4px;
-    margin-bottom: 50px;
     border: transparent;
     font-family: inherit;
     font-weight: 500;
@@ -197,6 +196,7 @@ img {
 .porfolio-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .porfolio-button .portfolio-item-btn:not(:last-child) {
     margin-right: 8px;
@@ -236,14 +236,12 @@ img {
 }
 .photo-work {
     display: flex;
-    margin-left: -30px;
 }
-.photo-work-item {
-    margin-left: 30px;
+.photo-work .photo-work-item:not(:last-child) {
+   margin-right: 30px;
 }
 .team-list {
     display: flex;
-    margin-top: 50px;
 }
 .team-item {
     width: 270px;
@@ -274,6 +272,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
 }
 .portfolio-item {
     width: 370px;
@@ -281,9 +280,10 @@ img {
     margin-left: 30px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
+    /* При перевірці макету border з'являється на всій li. Чому його треба переносити лише для підписів? */
 }
 .portfolio-cards {
-    margin: 20px 24px 20px;
+    padding: 20px 24px 20px;
 }
 .portfolio-title {
     height: 36px;
@@ -306,12 +306,10 @@ img {
     padding: 60px 0px; 
     background-color: var(--dark-bg-color);
 }
-.footer-section {
-    display: flex;
-    flex-direction: column;
-}
-.footer-list {
-margin-top: 20px;
+
+.logo-link {
+    display: block;
+    margin-bottom: 20px;
 }
 .footer-logo {
     color: #FFFFFF;
