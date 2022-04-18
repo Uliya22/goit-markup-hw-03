@@ -95,12 +95,11 @@ img {
 /* Header */
 
 .header-section {
+    padding: 25px 0px;
     border-bottom: 1px solid #cecece; 
 }
 .header-container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
     align-items: center;
 }
 .header-logo {
@@ -240,6 +239,9 @@ img {
 .photo-work .photo-work-item:not(:last-child) {
    margin-right: 30px;
 }
+.team-section {
+    background-color: #f5f4fa;
+}
 .team-list {
     display: flex;
 }
@@ -272,18 +274,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
 }
 .portfolio-item {
-    width: 370px;
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #eeeeee;
-    /* При перевірці макету border з'являється на всій li. Чому його треба переносити лише для підписів? */
+    margin-top: 30px;
 }
 .portfolio-cards {
     padding: 20px 24px 20px;
+    border: 1px solid #eeeeee;
+    
 }
 .portfolio-title {
     height: 36px;
